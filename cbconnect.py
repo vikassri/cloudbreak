@@ -143,18 +143,3 @@ class cbconnect(object):
 		''' orverride of unicode funtion be carefull '''
 		return f"{self.__class__.__name__}(hostname = {self.__host}, username = {self.__user} , password = '*****' )"
 
-
-
-
-
-
-	
-
-"""
-export TOKEN=$(curl -k -iX POST -H "accept: application/x-www-form-urlencoded" -d 'credentials={"username":"test@gmail.com","password":"Password123"}'  "https://35.200.229.52/identity/oauth/authorize?response_type=token&client_id=cloudbreak_shell&scope.0=openid&source=login&redirect_uri=http://cloudbreak.shell" | grep Location | cut -d'=' -f 3 | cut -d'&' -f 1)
-"""
-
-
-
-
-
